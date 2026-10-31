@@ -1,0 +1,9 @@
+{
+  "company": "Clio",
+  "title": "Deadline Diff",
+  "test_command": "node --test",
+  "demo_command": "node cli.mjs",
+  "scope": "Fictional UTC date-only rule DAG, holiday and manual-override review; no legal rule validation, recurrence expansion or calendar writes.",
+  "implemented": true,
+  "integration_status": "unverified"
+}

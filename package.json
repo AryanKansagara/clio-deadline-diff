@@ -1,0 +1,14 @@
+{
+  "name": "clio-deadline-diff",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Fictional UTC date-only rule DAG, holiday and manual-override review; no legal rule validation, recurrence expansion or calendar writes.",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node cli.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
