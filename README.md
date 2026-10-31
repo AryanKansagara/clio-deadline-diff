@@ -28,7 +28,7 @@ The demo crosses a fictional Monday holiday, preserves the overridden review dat
 
 ## Limits and next stages
 
-The holiday list is assumed complete for the fictional calendar. No locale, actual court rules, service method, filing-time cutoff, time zone conversion, recurrence expansion or jurisdiction logic is implemented. The DST tests establish stable date-only arithmetic, not correct zoned event timing. JSON reports are reproducible output, not a persistent audit database. No integration has been verified; GitHub Actions is prepared but not remotely executed.
+The holiday list is assumed complete for the fictional calendar. No locale, actual court rules, service method, filing-time cutoff, time zone conversion, recurrence expansion or jurisdiction logic is implemented. The DST tests establish stable date-only arithmetic, not correct zoned event timing. JSON reports are reproducible output, not a persistent audit database. No Clio integration has been verified. GitHub Actions runs the same tests and CLI demo; inspect the repository Actions tab for the latest hosted result.
 
 Node ESM suits deterministic graph/date orchestration; there is no inference path requiring C++. The next stage is stricter import schemas and read-only test-calendar ingestion preserving opaque identities and recurrence metadata. Any practical rule pack requires professional validation and explicit scope before use.
 
