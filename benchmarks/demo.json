@@ -1,0 +1,330 @@
+{
+  "provenance": "executed fictional dependency rules; no legal calendar integration",
+  "schemaVersion": 1,
+  "before": {
+    "packVersion": "toy-rules-v1",
+    "scope": "fictional authored UTC-date-only rules; not legal advice or validated filing dates",
+    "events": [
+      {
+        "id": "hearing",
+        "trigger": null,
+        "ruleVersion": null,
+        "calendar": null,
+        "seriesException": null,
+        "status": "fixed",
+        "date": "2026-10-30",
+        "nominal": "2026-10-30",
+        "reason": "authored fixed event"
+      },
+      {
+        "id": "brief",
+        "trigger": "hearing",
+        "ruleVersion": "brief-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "computed",
+        "date": "2026-11-03",
+        "nominal": "2026-11-03",
+        "reason": "computed from trigger",
+        "override": null
+      },
+      {
+        "id": "custom-review",
+        "trigger": "hearing",
+        "ruleVersion": "review-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "override",
+        "date": "2026-10-28",
+        "nominal": "2026-10-28",
+        "reason": "explicit override preserved",
+        "override": "2026-10-28"
+      },
+      {
+        "id": "review-followup",
+        "trigger": "custom-review",
+        "ruleVersion": "followup-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "computed",
+        "date": "2026-10-29",
+        "nominal": "2026-10-29",
+        "reason": "computed from trigger",
+        "override": null
+      },
+      {
+        "id": "fixed-audit",
+        "trigger": null,
+        "ruleVersion": null,
+        "calendar": null,
+        "seriesException": null,
+        "status": "fixed",
+        "date": "2026-12-01",
+        "nominal": "2026-12-01",
+        "reason": "authored fixed event"
+      },
+      {
+        "id": "recurrence-exception",
+        "trigger": null,
+        "ruleVersion": null,
+        "calendar": null,
+        "seriesException": {
+          "seriesId": "fictional-weekly",
+          "originalDate": "2026-11-06"
+        },
+        "status": "fixed",
+        "date": "2026-11-05",
+        "nominal": "2026-11-05",
+        "reason": "preserved explicit recurring-series exception"
+      },
+      {
+        "id": "unknown-rule",
+        "trigger": "hearing",
+        "ruleVersion": null,
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "unknown",
+        "date": null,
+        "nominal": null,
+        "reason": "missing or invalid rule version",
+        "override": null
+      },
+      {
+        "id": "unknown-child",
+        "trigger": "unknown-rule",
+        "ruleVersion": "child-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "unknown",
+        "date": null,
+        "nominal": null,
+        "reason": "trigger date unknown",
+        "override": null
+      }
+    ]
+  },
+  "after": {
+    "packVersion": "toy-rules-v1",
+    "scope": "fictional authored UTC-date-only rules; not legal advice or validated filing dates",
+    "events": [
+      {
+        "id": "hearing",
+        "trigger": null,
+        "ruleVersion": null,
+        "calendar": null,
+        "seriesException": null,
+        "status": "fixed",
+        "date": "2026-11-04",
+        "nominal": "2026-11-04",
+        "reason": "authored fixed event"
+      },
+      {
+        "id": "brief",
+        "trigger": "hearing",
+        "ruleVersion": "brief-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "computed",
+        "date": "2026-11-05",
+        "nominal": "2026-11-05",
+        "reason": "computed from trigger",
+        "override": null
+      },
+      {
+        "id": "custom-review",
+        "trigger": "hearing",
+        "ruleVersion": "review-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "override",
+        "date": "2026-10-28",
+        "nominal": "2026-10-30",
+        "reason": "explicit override preserved",
+        "override": "2026-10-28"
+      },
+      {
+        "id": "review-followup",
+        "trigger": "custom-review",
+        "ruleVersion": "followup-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "computed",
+        "date": "2026-10-29",
+        "nominal": "2026-10-29",
+        "reason": "computed from trigger",
+        "override": null
+      },
+      {
+        "id": "fixed-audit",
+        "trigger": null,
+        "ruleVersion": null,
+        "calendar": null,
+        "seriesException": null,
+        "status": "fixed",
+        "date": "2026-12-01",
+        "nominal": "2026-12-01",
+        "reason": "authored fixed event"
+      },
+      {
+        "id": "recurrence-exception",
+        "trigger": null,
+        "ruleVersion": null,
+        "calendar": null,
+        "seriesException": {
+          "seriesId": "fictional-weekly",
+          "originalDate": "2026-11-06"
+        },
+        "status": "fixed",
+        "date": "2026-11-05",
+        "nominal": "2026-11-05",
+        "reason": "preserved explicit recurring-series exception"
+      },
+      {
+        "id": "unknown-rule",
+        "trigger": "hearing",
+        "ruleVersion": null,
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "unknown",
+        "date": null,
+        "nominal": null,
+        "reason": "missing or invalid rule version",
+        "override": null
+      },
+      {
+        "id": "unknown-child",
+        "trigger": "unknown-rule",
+        "ruleVersion": "child-v1",
+        "calendar": "toy",
+        "seriesException": null,
+        "status": "unknown",
+        "date": null,
+        "nominal": null,
+        "reason": "trigger date unknown",
+        "override": null
+      }
+    ]
+  },
+  "diff": [
+    {
+      "id": "hearing",
+      "before": "2026-10-30",
+      "after": "2026-11-04",
+      "nominalBefore": "2026-10-30",
+      "nominalAfter": "2026-11-04",
+      "changed": true,
+      "needsReview": false,
+      "status": "fixed",
+      "explanation": "authored fixed event",
+      "ruleVersion": null,
+      "calendar": null,
+      "seriesException": null
+    },
+    {
+      "id": "brief",
+      "before": "2026-11-03",
+      "after": "2026-11-05",
+      "nominalBefore": "2026-11-03",
+      "nominalAfter": "2026-11-05",
+      "changed": true,
+      "needsReview": false,
+      "status": "computed",
+      "explanation": "computed from trigger",
+      "ruleVersion": "brief-v1",
+      "calendar": "toy",
+      "seriesException": null
+    },
+    {
+      "id": "custom-review",
+      "before": "2026-10-28",
+      "after": "2026-10-28",
+      "nominalBefore": "2026-10-28",
+      "nominalAfter": "2026-10-30",
+      "changed": false,
+      "needsReview": true,
+      "status": "override",
+      "explanation": "override preserved while nominal deadline changed",
+      "ruleVersion": "review-v1",
+      "calendar": "toy",
+      "seriesException": null
+    },
+    {
+      "id": "review-followup",
+      "before": "2026-10-29",
+      "after": "2026-10-29",
+      "nominalBefore": "2026-10-29",
+      "nominalAfter": "2026-10-29",
+      "changed": false,
+      "needsReview": true,
+      "status": "computed",
+      "explanation": "dependent on an override or unknown event requiring review",
+      "ruleVersion": "followup-v1",
+      "calendar": "toy",
+      "seriesException": null
+    },
+    {
+      "id": "fixed-audit",
+      "before": "2026-12-01",
+      "after": "2026-12-01",
+      "nominalBefore": "2026-12-01",
+      "nominalAfter": "2026-12-01",
+      "changed": false,
+      "needsReview": false,
+      "status": "fixed",
+      "explanation": "authored fixed event",
+      "ruleVersion": null,
+      "calendar": null,
+      "seriesException": null
+    },
+    {
+      "id": "recurrence-exception",
+      "before": "2026-11-05",
+      "after": "2026-11-05",
+      "nominalBefore": "2026-11-05",
+      "nominalAfter": "2026-11-05",
+      "changed": false,
+      "needsReview": false,
+      "status": "fixed",
+      "explanation": "preserved explicit recurring-series exception",
+      "ruleVersion": null,
+      "calendar": null,
+      "seriesException": {
+        "seriesId": "fictional-weekly",
+        "originalDate": "2026-11-06"
+      }
+    },
+    {
+      "id": "unknown-rule",
+      "before": null,
+      "after": null,
+      "nominalBefore": null,
+      "nominalAfter": null,
+      "changed": false,
+      "needsReview": true,
+      "status": "unknown",
+      "explanation": "missing or invalid rule version",
+      "ruleVersion": null,
+      "calendar": "toy",
+      "seriesException": null
+    },
+    {
+      "id": "unknown-child",
+      "before": null,
+      "after": null,
+      "nominalBefore": null,
+      "nominalAfter": null,
+      "changed": false,
+      "needsReview": true,
+      "status": "unknown",
+      "explanation": "dependent on an override or unknown event requiring review",
+      "ruleVersion": "child-v1",
+      "calendar": "toy",
+      "seriesException": null
+    }
+  ],
+  "summary": {
+    "changed": 2,
+    "needsReview": 4
+  },
+  "externalWrites": 0
+}
